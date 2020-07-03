@@ -46,6 +46,8 @@
             <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
             <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+              <li class="nav-item"><a href="meet-our-crew.html" class="nav-link">Meet Our Crew</a></li>
+            <li class="nav-item"> <button type="button" class="btn btn-info" href="#">Join Us</button></li>
           </ul>
         </div>
       </div>
@@ -218,11 +220,12 @@
               <h2 class="ftco-heading-2">Site Links</h2>
               <ul class="list-unstyled">
                 <li><a href="index.html" class="py-2 d-block">Home</a></li>
-                <li><a href="about.html" class="py-2 d-block">About</a></li>
+                <li><a href="about.html#causes" class="py-2 d-block">About</a></li>
                 <li><a href="donate.html" class="py-2 d-block">Donate</a></li>
-                <li><a href="index.html#causes" class="py-2 d-block">Causes</a></li>
-                <li><a href="event.html" class="py-2 d-block">Event</a></li>
-               <!-- <li><a href="blog.html" class="py-2 d-block">Blog</a></li>-->
+                  <li><a href="index.html" class="py-2 d-block">Causes</a></li>
+                  <li><a href="event.html" class="py-2 d-block">Event</a></li>
+                  <li><a href="meet-our-crew.html" class="py-2 d-block">Meet Our Crew</a></li>
+                  <!-- <li><a href="blog.html" class="py-2 d-block">Blog</a></li>-->
               </ul>
             </div>
           </div>
@@ -244,7 +247,7 @@
 
             
   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="#" target="_blank">Nawaazish</a>
-    </p>
+
           </div>
         </div>
       </div>
@@ -273,6 +276,36 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    
+    <script>
+
+        var carousel = function() {
+            $('.carousel-cause').owlCarousel({
+                autoplay: true,
+                center: true,
+                loop: true,
+                items:1,
+                margin: 30,
+                stagePadding:0,
+                nav: true,
+                navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
+                responsive:{
+                    0:{
+                        items: 1,
+                        stagePadding: 0
+                    },
+                    600:{
+                        items: 2,
+                        stagePadding: 50
+                    },
+                    1000:{
+                        items: 3,
+                        stagePadding: 100
+                    }
+                }
+            });
+
+        };
+        carousel();
+    </script>
   </body>
 </html>
