@@ -3329,6 +3329,58 @@ input[type="button"].btn-block {
   background: no-repeat center center;
   background-size: 100% 100%; }
 
+  .Social:hover{
+    background: rgba(255, 255, 255, 0.90);
+    border-radius: 50%;
+  }
+
+  .Social:hover span{
+        color: #079b78 !important;
+      }
+      .customInput{
+          border-radius: 6px 6px 6px 6px;
+          border-width: 0px 0px 1.1px 0px;
+          border-style: solid;
+          background-color: inherit;
+          text-decoration: none;
+          border-color: rgba(207, 207, 207, 1);
+          font-size: 13px;
+          margin-top: 2%;
+      }
+      input.customInput:focus {
+          outline-width: 0;
+          border-width: 0px 0px 2px 0px;
+          border-color: #079b78;
+
+      }
+      textarea.customInput:focus {
+          outline-width: 0;
+          border-width: 0px 0px 2px 0px;
+          border-color: #079b78;
+
+      }
+      .form-control{
+        height: calc(2.5em + .75rem + 2px) !important;
+        padding-bottom: 0px !important;
+      }
+      .form-control:focus,.btn:focus{
+        outline: 0;
+        box-shadow: 0 0 0 0 !important;
+      }
+      #joinUsButton{
+        width: 50%;
+        margin-left: 25%;
+        color: #079b78;
+        border-color: #079b78;
+        margin-top: -2%;
+        border-radius: 0px;
+      }
+      #joinUsButton:hover{
+        color: #fff;
+        background-color: #079b78;
+
+      }
+
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
@@ -7392,7 +7444,8 @@ h1, h2, h3, h4, h5,
     left: 0;
     top: 0;
     margin-top: -130px;
-    background: #fff !important;
+    background: #000000 !important;
+    color: #fff;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); }
     .ftco-navbar-light.scrolled .nav-item.active > a {
@@ -7437,8 +7490,7 @@ h1, h2, h3, h4, h5,
       letter-spacing: .1em; }
     .ftco-navbar-light.scrolled .nav-link {
       padding-top: 0.9rem !important;
-      padding-bottom: 0.9rem !important;
-      color: #000 !important; }
+      padding-bottom: 0.9rem !important; }
       .ftco-navbar-light.scrolled .nav-link.active {
         color: #70e2c8 !important; }
     .ftco-navbar-light.scrolled.awake {
@@ -7451,7 +7503,7 @@ h1, h2, h3, h4, h5,
       -o-transition: .3s all ease-out;
       transition: .3s all ease-out; }
     .ftco-navbar-light.scrolled .navbar-brand {
-      color: #000; }
+      }
 
 .navbar-brand {
   font-weight: 700;
@@ -8282,7 +8334,7 @@ textarea.form-control {
 .ftco-footer {
   font-size: 16px;
   padding: 7em 0;
-  background: #363535; }
+  background: #079b78; }
   .ftco-footer .ftco-footer-logo {
     text-transform: uppercase;
     letter-spacing: .1em; }
@@ -8333,6 +8385,7 @@ textarea.form-control {
     margin-right: 5px; }
     .ftco-footer .block-21 .text .meta > div a {
       color: gray; }
+
 
 .ftco-footer-social li {
   list-style: none;
