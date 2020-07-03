@@ -2091,7 +2091,9 @@ fieldset:disabled a.btn {
 .btn-info {
   color: #fff;
   background-color: #17a2b8;
-  border-color: #17a2b8; }
+  border-color: #17a2b8;
+  margin-top: .6rem;
+  margin-left: 15px;}
   .btn-info:hover {
     color: #fff;
     background-color: #138496;
@@ -7688,6 +7690,10 @@ h1, h2, h3, h4, h5,
       background: #000;
       border-color: #000;
       color: #fff; }
+    .btn-navbar {
+        margin-top: .6rem; 
+    }
+
 
 .ftco-intro {
   margin-top: -80px;
