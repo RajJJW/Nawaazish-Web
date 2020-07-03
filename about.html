@@ -4,13 +4,13 @@
     <title>Nawaazish</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Overpass:300,400,400i,600,700" rel="stylesheet">
 
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
-    
+
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
@@ -22,13 +22,110 @@
     <link rel="stylesheet" href="css/bootstrap-datepicker.css">
     <link rel="stylesheet" href="css/jquery.timepicker.css">
 
-    
+
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+  <div class="modal fade" id="joinUsModal" tabindex="-1" role="dialog" aria-labelledby="joinUsModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modalphone" role="document" style="max-width: 50%; font-family: Helvetica">
+      <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button> -->
+      <div class="modal-content" style="">
+
+          <div class="modal-body" style="padding: 0px">
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12" style="padding: 0px">
+                      <img src="images/joinmodal.jpg" class="modalimg" height="511px" style="max-width: 100%; margin: 0px" alt="">
+                    </div>
+                    <div class="col-lg-8 col-md-12" style="text-align: center; background-color: ">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="color: #000">&times;</span></button>
+                      <h2 style="color: #079b78"><b>Be a Volunteer</b></h2>
+                      <span class="form-group" >
+                          <form action="abc" method="post" >
+                          <input name="name" class="form-control customInput" id="username" placeholder="Name">
+                          <input name="city" class="form-control customInput" id="emailLogIn" placeholder="State/City" style="width:49%; display: inline">
+                          <input name="area" class="form-control customInput" id="emailLogIn" placeholder="Area/Locality" style="width:49%; display: inline">
+                          <input name="pincode" class="form-control customInput" id="emailLogIn" placeholder="Pincode" style="width:49%; display: inline">
+                          <input name="phn" class="form-control customInput" id="emailLogIn" placeholder="Contact No." style="width:49%; display: inline">
+                          <input name="email" class="form-control customInput" id="emailLogIn" placeholder="Email Address">
+                          <input name="pass" class="form-control customInput" id="passwordLogIn" placeholder="Instagram handle">
+                          <textarea name="" rows="4" class="form-control customInput" id="description" placeholder="Feedback"></textarea>
+                          <br>
+                          <input type="submit" name="" class="btn btn-outline-dark btn-md btn-block" id="joinUsButton" value="Join Us"/>
+                          <br>
+                          </form>
+
+                      </span>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
   <body>
-    
+    <style>
+    .Social:hover{
+      background: rgba(255, 255, 255, 0.90);
+      border-radius: 50%;
+    }
+
+    .Social:hover span{
+          color: #079b78 !important;
+        }
+        .customInput{
+            border-radius: 6px 6px 6px 6px;
+            border-width: 0px 0px 1.1px 0px;
+            border-style: solid;
+            background-color: inherit;
+            text-decoration: none;
+            border-color: rgba(207, 207, 207, 1);
+            font-size: 13px;
+            margin-top: 2%;
+        }
+        input.customInput:focus {
+            outline-width: 0;
+            border-width: 0px 0px 2px 0px;
+            border-color: #079b78;
+
+        }
+        textarea.customInput:focus {
+            outline-width: 0;
+            border-width: 0px 0px 2px 0px;
+            border-color: #079b78;
+
+        }
+        .form-control{
+          height: calc(2.5em + .75rem + 2px) !important;
+          padding-bottom: 0px !important;
+        }
+        .form-control:focus,.btn:focus{
+          outline: 0;
+          box-shadow: 0 0 0 0 !important;
+        }
+        #joinUsButton{
+          width: 50%;
+          margin-left: 25%;
+          color: #079b78;
+          border-color: #079b78;
+          margin-top: -2%;
+          border-radius: 0px;
+        }
+        #joinUsButton:hover{
+          color: #fff;
+          background-color: #079b78;
+        }
+        @media (max-width: 480px){
+          .modalphone{
+            max-width: 95% !important;
+          }
+          .modalimg{
+            width: 100%;
+          }
+        }
+    </style>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
@@ -36,7 +133,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
-  
+
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
@@ -46,14 +143,12 @@
             <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
             <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-              <li class="nav-item"><a href="meet-our-crew.html" class="nav-link">Meet Our Crew</a></li>
-            <li class="nav-item"> <button type="button" class="btn btn-info" href="#">Join Us</button></li>
           </ul>
         </div>
       </div>
     </nav>
       <!-- END nav -->
-    
+
     <div class="hero-wrap" style="background-image: url('images/bg_7.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
@@ -66,21 +161,23 @@
       </div>
     </div>
 
-    
+
     <section class="ftco-section">
     	<div class="container">
     		<div class="row d-flex">
     			<div class="col-md-6 d-flex ftco-animate">
-    				<div class="img img-about align-self-stretch" style="background-image: url(images/bg_3.jpg); width: 100%;"></div>
+    				<div class="img img-about align-self-stretch" style="background-image: url(images/aboutbg.jpg); width: 100%;"></div>
     			</div>
     			<div class="col-md-6 pl-md-5 ftco-animate">
-    				<h2 class="mb-4">Welcome to Welfare Stablished Since 1898</h2>
-    				<p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
-    				<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+    				<h2 class="mb-4">About Us</h2>
+    				<p>We are Nawaazish crew - a group of college students from different realms of life, on a mission to contribute to a society of equal opportunities, an environment one and all.</p>
+    				<p>Nawaazish, which translates to kindness, is the soul of our drive - one to channelize resources and skills to create a better world. We strive you the underprivileged communities to foster change.</p>
     			</div>
     		</div>
     	</div>
     </section>
+
+
 
     <section class="ftco-counter ftco-intro ftco-intro-2" id="section-counter">
     	<div class="container">
@@ -99,7 +196,7 @@
               <div class="text">
               	<h3 class="mb-4">Be a Volunteer</h3>
               	<p>Even the all-powerful Pointing has no control about the blind texts.</p>
-              	<p><a href="#" class="btn btn-white px-3 py-2 mt-2">Be A Volunteer</a></p>
+              	<p><a href="#" class="btn btn-white px-3 py-2 mt-2" data-toggle="modal" data-target="#joinUsModal" >Be A Volunteer</a></p>
               </div>
             </div>
           </div>
@@ -108,68 +205,23 @@
     </section>
 
     <!--Causes-->
-    <section id="causes" class="ftco-section bg-light">
-    	<div class="container-fluid">
-    		<div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-5 heading-section ftco-animate text-center">
-            <h2 class="mb-4">Our Causes</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row d-flex">
+          <div class="col-md-6 pl-md-5 ftco-animate">
+            <h2 class="mb-4">Why was Nawaazish founded?</h2>
+            <p>Nawaazish was founded with the noble aim to foster change in our society.</p>
+            <p>"The smallest act of kindness is worth more than the greatest intentions." We the members of Nawaazish stand by this thought.</p>
+            <p>We are an organization driven by change. A change that we want in society, for us and the people around us. We aim to create awareness and educate our society, one day & one person at a time.</p>
+            <h2 class="mb-4">Our Mission</h2>
+            <p>We here at Nawaazish Crew work with the aim to create a society of equal opportunities and an environment that sustains one and all. We believe in the idealogy that all life is equal and put everything in making this idealogy a ground reality for everyone.</p>
+          </div>
+          <div class="col-md-6 d-flex ftco-animate">
+            <div class="img img-about align-self-stretch" style="background-image: url(images/aboutbg3.jpg); width: 100%;"></div>
           </div>
         </div>
-    		<div class="row">
-    			<div class="col-md-12 ftco-animate">
-    				<div class="carousel-cause owl-carousel">
-	    				<div class="item">
-	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/cause-1.jpg);"></a>
-		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="#">Clean water for the urban area</a></h3>
-		    						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-		    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-		                <div class="progress custom-progress-success">
-		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
-		                <span class="fund-raised d-block">$12,000 raised of $30,000</span>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				
-	    				
-	    				<div class="item">
-	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/cause-4.jpg);"></a>
-		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="#">Clean water for the urban area</a></h3>
-		    						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-		    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-		                <div class="progress custom-progress-success">
-		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
-		                <span class="fund-raised d-block">$12,000 raised of $30,000</span>
-		    					</div>
-		    				</div>
-	    				</div>
-	    				
-	    				<div class="item">
-	    					<div class="cause-entry">
-		    					<a href="#" class="img" style="background-image: url(images/cause-6.jpg);"></a>
-		    					<div class="text p-3 p-md-4">
-		    						<h3><a href="#">Clean water for the urban area</a></h3>
-		    						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-		    						<span class="donation-time mb-3 d-block">Last donation 1w ago</span>
-		                <div class="progress custom-progress-success">
-		                  <div class="progress-bar bg-primary" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
-		                </div>
-		                <span class="fund-raised d-block">$12,000 raised of $30,000</span>
-		    					</div>
-		    				</div>
-	    				</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
+      </div>
     </section>
-		
 
  <!--Footer-->
 
@@ -224,9 +276,6 @@
               <li><a href="mailto:nawaazishcrew@gmail.com"><span class="icon icon-envelope"></span><span class="text">nawaazish.crew@gmail.com</span></a></li>
             </ul>
 
-          </div>
-        </div>
-      </div>
     </div>
     <div class="row">
       <div class="col-md-12 text-center">
@@ -239,8 +288,9 @@
     
   
 
+
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#079b78"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
 
 
   <script src="js/jquery.min.js"></script>
@@ -260,36 +310,6 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-    <script>
 
-        var carousel = function() {
-            $('.carousel-cause').owlCarousel({
-                autoplay: true,
-                center: true,
-                loop: true,
-                items:1,
-                margin: 30,
-                stagePadding:0,
-                nav: true,
-                navText: ['<span class="ion-ios-arrow-back">', '<span class="ion-ios-arrow-forward">'],
-                responsive:{
-                    0:{
-                        items: 1,
-                        stagePadding: 0
-                    },
-                    600:{
-                        items: 2,
-                        stagePadding: 50
-                    },
-                    1000:{
-                        items: 3,
-                        stagePadding: 100
-                    }
-                }
-            });
-
-        };
-        carousel();
-    </script>
   </body>
 </html>
