@@ -28,17 +28,19 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <div class="modal fade" id="joinUsModal" tabindex="-1" role="dialog" aria-labelledby="joinUsModalTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 50%; font-family: Helvetica">
+    <div class="modal-dialog modal-dialog-centered modalphone" role="document" style="max-width: 50%; font-family: Helvetica">
       <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button> -->
       <div class="modal-content" style="">
 
           <div class="modal-body" style="padding: 0px">
               <div class="container">
                 <div class="row">
-                    <div class="col-4" style="padding: 0px">
-                      <img src="images/vert.jpg" height="500px" style="max-width: 100%; margin: 0px" alt="">
+                    <div class="col-lg-4 col-md-12" style="padding: 0px">
+                      <img src="images/joinmodal.jpg" class="modalimg" height="561px" style="max-width: 100%; margin: 0px" alt="">
                     </div>
-                    <div class="col-8" style="text-align: center; background-color: ">
+                    <div class="col-lg-8 col-md-12" style="text-align: center; background-color: ">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="color: #000">&times;</span></button>
                       <h2 style="color: #079b78"><b>Be a Volunteer</b></h2>
                       <span class="form-group" >
                           <form action="abc" method="post" >
@@ -52,6 +54,7 @@
                           <textarea name="" rows="4" class="form-control customInput" id="description" placeholder="Feedback"></textarea>
                           <br>
                           <input type="submit" name="" class="btn btn-outline-dark btn-md btn-block" id="joinUsButton" value="Join Us"/>
+                          <br>
                           </form>
 
                       </span>
@@ -82,7 +85,7 @@
           <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
           <li class="nav-item"><a href="meet-our-crew.html" class="nav-link">Meet Our Crew</a></li>
-          <li class="nav-item"> <button type="button" class="btn btn-info" href="#">Join Us</button></li>
+          <li class="nav-item"> <button type="button" class="btn btn-info" href="#" data-toggle="modal" data-target="#joinUsModal">Join Us</button></li>
         </ul>
       </div>
     </div>
@@ -296,7 +299,7 @@
               </div>
             </div>
           </div>
-  
+
         </div>
       </div>
     </section>
@@ -372,6 +375,7 @@
                 <li><a href="about.html" class="py-2 d-block">About</a></li>
                 <li><a href="donate.html" class="py-2 d-block">Donate</a></li>
                 <li><a href="event.html" class="py-2 d-block">Event</a></li>
+                <li><a href="meet-our-crew.html" class="py-2 d-block">Meet Our Crew</a></li>
                <!-- <li><a href="blog.html" class="py-2 d-block">Blog</a></li>-->
                </ul>
         </div>
