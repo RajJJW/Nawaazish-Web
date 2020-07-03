@@ -28,17 +28,19 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <div class="modal fade" id="joinUsModal" tabindex="-1" role="dialog" aria-labelledby="joinUsModalTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document" style="max-width: 50%; font-family: Helvetica">
+    <div class="modal-dialog modal-dialog-centered modalphone" role="document" style="max-width: 50%; font-family: Helvetica">
       <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button> -->
       <div class="modal-content" style="">
 
           <div class="modal-body" style="padding: 0px">
               <div class="container">
                 <div class="row">
-                    <div class="col-4" style="padding: 0px">
-                      <img src="images/vert.jpg" height="500px" style="max-width: 100%; margin: 0px" alt="">
+                    <div class="col-lg-4 col-md-12" style="padding: 0px">
+                      <img src="images/joinmodal.jpg" class="modalimg" height="561px" style="max-width: 100%; margin: 0px" alt="">
                     </div>
-                    <div class="col-8" style="text-align: center; background-color: ">
+                    <div class="col-lg-8 col-md-12" style="text-align: center; background-color: ">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="color: #000">&times;</span></button>
                       <h2 style="color: #079b78"><b>Be a Volunteer</b></h2>
                       <span class="form-group" >
                           <form action="abc" method="post" >
@@ -52,6 +54,7 @@
                           <textarea name="" rows="4" class="form-control customInput" id="description" placeholder="Feedback"></textarea>
                           <br>
                           <input type="submit" name="" class="btn btn-outline-dark btn-md btn-block" id="joinUsButton" value="Join Us"/>
+                          <br>
                           </form>
 
                       </span>
@@ -63,59 +66,7 @@
       </div>
     </div>
   <body>
-    <style>
-    .Social:hover{
-      background: rgba(255, 255, 255, 0.90);
-      border-radius: 50%;
-    }
 
-    .Social:hover span{
-          color: #079b78 !important;
-        }
-        .customInput{
-            border-radius: 6px 6px 6px 6px;
-            border-width: 0px 0px 1.1px 0px;
-            border-style: solid;
-            background-color: inherit;
-            text-decoration: none;
-            border-color: rgba(207, 207, 207, 1);
-            font-size: 13px;
-            margin-top: 2%;
-        }
-        input.customInput:focus {
-            outline-width: 0;
-            border-width: 0px 0px 2px 0px;
-            border-color: #079b78;
-
-        }
-        textarea.customInput:focus {
-            outline-width: 0;
-            border-width: 0px 0px 2px 0px;
-            border-color: #079b78;
-
-        }
-        .form-control{
-          height: calc(2.5em + .75rem + 2px) !important;
-          padding-bottom: 0px !important;
-        }
-        .form-control:focus,.btn:focus{
-          outline: 0;
-          box-shadow: 0 0 0 0 !important;
-        }
-        #joinUsButton{
-          width: 50%;
-          margin-left: 25%;
-          color: #079b78;
-          border-color: #079b78;
-          margin-top: -2%;
-          border-radius: 0px;
-        }
-        #joinUsButton:hover{
-          color: #fff;
-          background-color: #079b78;
-
-        }
-    </style>
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
@@ -134,7 +85,7 @@
           <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
           <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
           <li class="nav-item"><a href="meet-our-crew.html" class="nav-link">Meet Our Crew</a></li>
-          <li class="nav-item"> <button type="button" class="btn btn-info" href="#">Join Us</button></li>
+          <li class="nav-item"> <button type="button" class="btn btn-info" href="#" data-toggle="modal" data-target="#joinUsModal">Join Us</button></li>
         </ul>
       </div>
     </div>
@@ -333,25 +284,45 @@
           </div>
         </div>
         <div class="row justify-content-center">
-        	<div class="col-md-6 d-flex ftco-animate">
-          	<div class="blog-entry align-self-stretch">
-              <div class="block-20" style="background-image: url('images/event-1.jpg');">
+          <div class="col-md-6 d-flex ftco-animate">
+              <div class="blog-entry align-self-stretch">
+                  <div class="block-20" style="background-image: url('images/event-1.jpg');">
+                  </div>
+                  <div class="text p-4 d-block text-center">
+                      <div class="meta mb-3">
+                          <div><p>July 31, 2020</p></div>
+                          <div><a href="https://www.instagram.com/nawaazish.crew/">Admin</a></div>
+                      </div>
+                      <h3 class="heading mb-4"><a href="#">RHA 30 Million</a></h3>
+                      <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                      <p><a href="donate.html" class="float-left">Donate Now <i class="ion-ios-arrow-forward"></i></a> 
+                      <p><a href="#Event1_Modal" class="float-right" data-toggle="modal">View More <i class="ion-ios-arrow-forward"></i></a></p>
+                  </div>
               </div>
-              <div class="text p-4 d-block text-center">
-              	<div class="meta mb-3">
-                  <div><p>July 31, 2020</p></div>
-                  <div><a href="https://www.instagram.com/nawaazish.crew/">Admin</a></div>
-                </div>
-                <h3 class="heading mb-4"><a href="#">RHA 30 Million</a></h3>
-                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <p><a href="donate.html">Donate Now <i class="ion-ios-arrow-forward"></i></a></p>
-              </div>
-            </div>
           </div>
-  
+
         </div>
       </div>
     </section>
+
+    <!--Modal-->
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal" tabindex="-1" role="dialog" id="Event1_Modal">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title">RHA 30 Million</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <p>Modal body text goes here.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
 
     <!--Be a Volunteer-->
     <section class="ftco-counter ftco-intro" id="section-counter">
@@ -424,6 +395,7 @@
                 <li><a href="about.html" class="py-2 d-block">About</a></li>
                 <li><a href="donate.html" class="py-2 d-block">Donate</a></li>
                 <li><a href="event.html" class="py-2 d-block">Event</a></li>
+                <li><a href="meet-our-crew.html" class="py-2 d-block">Meet Our Crew</a></li>
                <!-- <li><a href="blog.html" class="py-2 d-block">Blog</a></li>-->
                </ul>
         </div>
@@ -452,7 +424,7 @@
 
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#079b78"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#fff"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#079b78"/></svg></div>
 
 
   <script src="js/jquery.min.js"></script>

@@ -27,64 +27,50 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
+  <div class="modal fade" id="joinUsModal" tabindex="-1" role="dialog" aria-labelledby="joinUsModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modalphone" role="document" style="max-width: 50%; font-family: Helvetica">
+      <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button> -->
+      <div class="modal-content" style="">
+
+          <div class="modal-body" style="padding: 0px">
+              <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12" style="padding: 0px">
+                      <img src="images/joinmodal.jpg" class="modalimg" height="561px" style="max-width: 100%; margin: 0px" alt="">
+                    </div>
+                    <div class="col-lg-8 col-md-12" style="text-align: center; background-color: ">
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="color: #000">&times;</span></button>
+                      <h2 style="color: #079b78"><b>Be a Volunteer</b></h2>
+                      <span class="form-group" >
+                          <form action="abc" method="post" >
+                          <input name="name" class="form-control customInput" id="username" placeholder="Name">
+                          <input name="city" class="form-control customInput" id="emailLogIn" placeholder="State/City" style="width:49%; display: inline">
+                          <input name="area" class="form-control customInput" id="emailLogIn" placeholder="Area/Locality" style="width:49%; display: inline">
+                          <input name="pincode" class="form-control customInput" id="emailLogIn" placeholder="Pincode" style="width:49%; display: inline">
+                          <input name="phn" class="form-control customInput" id="emailLogIn" placeholder="Contact No." style="width:49%; display: inline">
+                          <input name="email" class="form-control customInput" id="emailLogIn" placeholder="Email Address">
+                          <input name="pass" class="form-control customInput" id="passwordLogIn" placeholder="Instagram handle">
+                          <textarea name="" rows="4" class="form-control customInput" id="description" placeholder="Feedback"></textarea>
+                          <br>
+                          <input type="submit" name="" class="btn btn-outline-dark btn-md btn-block" id="joinUsButton" value="Join Us"/>
+                          <br>
+                          </form>
+
+                      </span>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
   <body>
-    <style>
-    .Social:hover{
-      background: rgba(255, 255, 255, 0.90);
-      border-radius: 50%;
-    }
 
-    .Social:hover span{
-          color: #079b78 !important;
-        }
-        .customInput{
-            border-radius: 6px 6px 6px 6px;
-            border-width: 0px 0px 1.1px 0px;
-            border-style: solid;
-            background-color: inherit;
-            text-decoration: none;
-            border-color: rgba(207, 207, 207, 1);
-            font-size: 13px;
-            margin-top: 2%;
-        }
-        input.customInput:focus {
-            outline-width: 0;
-            border-width: 0px 0px 2px 0px;
-            border-color: #079b78;
-
-        }
-        textarea.customInput:focus {
-            outline-width: 0;
-            border-width: 0px 0px 2px 0px;
-            border-color: #079b78;
-
-        }
-        .form-control{
-          height: calc(2.5em + .75rem + 2px) !important;
-          padding-bottom: 0px !important;
-        }
-        .form-control:focus,.btn:focus{
-          outline: 0;
-          box-shadow: 0 0 0 0 !important;
-        }
-        #joinUsButton{
-          width: 50%;
-          margin-left: 25%;
-          color: #079b78;
-          border-color: #079b78;
-          margin-top: -2%;
-          border-radius: 0px;
-        }
-        #joinUsButton:hover{
-          color: #fff;
-          background-color: #079b78;
-
-        }
-    </style>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png" height="55px" style="margin-bottom: 5px;"> Nawaazish</a>
+        <a class="navbar-brand" href="index.html">Nawaazish</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="oi oi-menu"></span> Menu
         </button>
@@ -98,13 +84,16 @@
             <li class="nav-item active"><a href="gallery.html" class="nav-link">Gallery</a></li>
             <li class="nav-item"><a href="event.html" class="nav-link">Events</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+
+              <li class="nav-item"><a href="meet-our-crew.html" class="nav-link">Meet Our Crew</a></li>
+            <li class="nav-item"> <button type="button" class="btn btn-info" href="#" data-toggle="modal" data-target="#joinUsModal">Join Us</button></li>
           </ul>
         </div>
       </div>
     </nav>
       <!-- END nav -->
 
-    <div class="hero-wrap" style="background-image: url('images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+    <div class="hero-wrap" style="background-image: url('images/bg_gallery.jpg');" data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
@@ -119,103 +108,103 @@
     <section class="ftco-section ftco-gallery">
     	<div class="container">
 	    	<div class="d-md-flex">
-		    	<a href="images/cause-2.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/cause-2.jpg);">
+		    	<a href="images/Event/NawaazishCrewxActionForAutism/Image1.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/Event/NawaazishCrewxActionForAutism/Image1.jpg);">
 		    		<div class="icon d-flex justify-content-center align-items-center">
 		    			<span class="icon-search"></span>
 		    		</div>
 		    	</a>
-		    	<a href="images/cause-3.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/cause-3.jpg);">
+		    	<a href="images/Event/NawaazishCrewxActionForAutism/Image2.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/Event/NawaazishCrewxActionForAutism/Image2.jpg);">
 		    		<div class="icon d-flex justify-content-center align-items-center">
 		    			<span class="icon-search"></span>
 		    		</div>
 		    	</a>
-		    	<a href="images/cause-4.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/cause-4.jpg);">
+		    	<a href="images/Event/NawaazishCrewxActionForAutism/Image3.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/Event/NawaazishCrewxActionForAutism/Image3.jpg);">
 		    		<div class="icon d-flex justify-content-center align-items-center">
 		    			<span class="icon-search"></span>
 		    		</div>
 		    	</a>
-		    	<a href="images/cause-5.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/cause-5.jpg);">
+		    	<a href="images/Event/NawaazishCrewxActionForAutism/Image4.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/Event/NawaazishCrewxActionForAutism/Image4.jpg);">
 		    		<div class="icon d-flex justify-content-center align-items-center">
 		    			<span class="icon-search"></span>
 		    		</div>
 		    	</a>
 	    	</div>
 	    	<div class="d-md-flex">
-		    	<a href="images/cause-6.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/cause-6.jpg);">
+		    	<a href="images/Event/NawaazishCrewxActionForAutism/Image5.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/Event/NawaazishCrewxActionForAutism/Image5.jpg);">
 		    		<div class="icon d-flex justify-content-center align-items-center">
 		    			<span class="icon-search"></span>
 		    		</div>
 		    	</a>
-		    	<a href="images/image_3.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/image_3.jpg);">
+		    	<a href="images/Event/NawaazishCrewxActionForAutism/Image6.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/Event/NawaazishCrewxActionForAutism/Image6.jpg);">
 		    		<div class="icon d-flex justify-content-center align-items-center">
 		    			<span class="icon-search"></span>
 		    		</div>
 		    	</a>
-		    	<a href="images/image_1.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/image_1.jpg);">
+		    	<a href="images/Event/NawaazishCrewxRobinHoodArmy/Image7.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/Event/NawaazishCrewxRobinHoodArmy/Image7.jpg);">
 		    		<div class="icon d-flex justify-content-center align-items-center">
 		    			<span class="icon-search"></span>
 		    		</div>
 		    	</a>
-		    	<a href="images/image_2.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/image_2.jpg);">
+		    	<a href="images/Event/NawaazishCrewxRobinHoodArmy/Image8.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/Event/NawaazishCrewxRobinHoodArmy/Image8.jpg);">
 		    		<div class="icon d-flex justify-content-center align-items-center">
 		    			<span class="icon-search"></span>
 		    		</div>
 		    	</a>
 		    </div>
 		    <div class="d-md-flex">
-		    	<a href="images/event-1.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/event-1.jpg);">
+		    	<a href="images/Event/NawaazishCrewxRobinHoodArmy/Image9.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/Event/NawaazishCrewxRobinHoodArmy/Image9.jpg);">
 		    		<div class="icon d-flex justify-content-center align-items-center">
 		    			<span class="icon-search"></span>
 		    		</div>
 		    	</a>
-		    	<a href="images/event-2.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/event-2.jpg);">
+		    	<a href="images/Event/NawaazishCrewxRobinHoodArmy/Image10.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/Event/NawaazishCrewxRobinHoodArmy/Image10.jpg);">
 		    		<div class="icon d-flex justify-content-center align-items-center">
 		    			<span class="icon-search"></span>
 		    		</div>
 		    	</a>
-		    	<a href="images/image_1.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/image_4.jpg);">
+		    	<a href="images/Event/NawaazishCrewxRobinHoodArmy/Image11.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/Event/NawaazishCrewxRobinHoodArmy/Image11.jpg);">
 		    		<div class="icon d-flex justify-content-center align-items-center">
 		    			<span class="icon-search"></span>
 		    		</div>
 		    	</a>
-		    	<a href="images/image_2.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/event-4.jpg);">
-		    		<div class="icon d-flex justify-content-center align-items-center">
-		    			<span class="icon-search"></span>
-		    		</div>
-		    	</a>
+<!--		    	<a href="images/image_2.jpg" class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate" style="background-image: url(images/event-4.jpg);">-->
+<!--		    		<div class="icon d-flex justify-content-center align-items-center">-->
+<!--		    			<span class="icon-search"></span>-->
+<!--		    		</div>-->
+<!--		    	</a>-->
 		    </div>
 	    </div>
     </section>
 
-    <section class="ftco-section-3 img" style="background-image: url(images/bg_3.jpg);">
-    	<div class="overlay"></div>
-    	<div class="container">
-    		<div class="row d-md-flex">
-    		<div class="col-md-6 d-flex ftco-animate">
-    			<div class="img img-2 align-self-stretch" style="background-image: url(images/bg_4.jpg);"></div>
-    		</div>
-    		<div class="col-md-6 volunteer pl-md-5 ftco-animate">
-    			<h3 class="mb-3">Be a volunteer</h3>
-    			<form action="#" class="volunter-form">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Email">
-            </div>
-            <div class="form-group">
-              <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
-            </div>
-            <div class="form-group">
-              <input type="submit" value="Send Message" class="btn btn-white py-3 px-5">
-            </div>
-          </form>
-    		</div>
-    		</div>
-    	</div>
-    </section>
+<!--    <section class="ftco-section-3 img" style="background-image: url(images/bg_3.jpg);">-->
+<!--    	<div class="overlay"></div>-->
+<!--    	<div class="container">-->
+<!--    		<div class="row d-md-flex">-->
+<!--    		<div class="col-md-6 d-flex ftco-animate">-->
+<!--    			<div class="img img-2 align-self-stretch" style="background-image: url(images/bg_4.jpg);"></div>-->
+<!--    		</div>-->
+<!--    		<div class="col-md-6 volunteer pl-md-5 ftco-animate">-->
+<!--    			<h3 class="mb-3">Be a volunteer</h3>-->
+<!--    			<form action="#" class="volunter-form">-->
+<!--            <div class="form-group">-->
+<!--              <input type="text" class="form-control" placeholder="Your Name">-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--              <input type="text" class="form-control" placeholder="Your Email">-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--              <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>-->
+<!--            </div>-->
+<!--            <div class="form-group">-->
+<!--              <input type="submit" value="Send Message" class="btn btn-white py-3 px-5">-->
+<!--            </div>-->
+<!--          </form>-->
+<!--    		</div>    			-->
+<!--    		</div>-->
+<!--    	</div>-->
+<!--    </section>?-->
 
-<!--Footer-->
+    <!--Footer-->
 
     <footer class="ftco-footer ftco-section img">
     	<div class="overlay"></div>
@@ -224,11 +213,11 @@
           <div class="col-md-4">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">About Us</h2>
-              <p>We are Nawaazish crew - a group of college students from different realms of life, on a mission to contribute to a society of equal opportunities, an environment one and all.</p>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
               <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate Social"><a href="https://twitter.com/NawaazishCrew" target="_blank"><span class="icon-twitter "></span></a></li>
-                <li class="ftco-animate Social"><a href="https://www.facebook.com/Nawaazish-Crew-107099397604923/" target="_blank"><span class="icon-facebook "></span></a></li>
-                <li class="ftco-animate Social"><a href="https://www.instagram.com/nawaazish.crew/" target="_blank"><span class="icon-instagram "></span></a></li>
+                <li class="ftco-animate"><a href="https://twitter.com/NawaazishCrew" target="_blank"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/Nawaazish-Crew-107099397604923/" target="_blank"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/nawaazish.crew/" target="_blank"><span class="icon-instagram"></span></a></li>
               </ul>
             </div>
           </div>
@@ -266,35 +255,39 @@
                 <li><a href="index.html" class="py-2 d-block">Home</a></li>
                 <li><a href="about.html" class="py-2 d-block">About</a></li>
                 <li><a href="donate.html" class="py-2 d-block">Donate</a></li>
+                <li><a href="index.html#causes" class="py-2 d-block">Causes</a></li>
                 <li><a href="event.html" class="py-2 d-block">Event</a></li>
-               <!-- <li><a href="blog.html" class="py-2 d-block">Blog</a></li>-->
-               </ul>
+                  <li><a href="meet-our-crew.html" class="py-2 d-block">Meet Our Crew</a></li>
+
+                  <!-- <li><a href="blog.html" class="py-2 d-block">Blog</a></li>-->
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Contact Us</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">+91-8800202773</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">nawaazish.crew@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4">
-        <div class="ftco-footer-widget mb-4">
-          <h2 class="ftco-heading-2">Contact Us</h2>
-          <div class="block-23 mb-3">
-            <ul>
-              <li><a href="tel://+91-8800202773"><span class="icon icon-phone"></span><span class="text">+91-8800202773</span></a></li>
-              <li><a href="mailto:nawaazishcrew@gmail.com"><span class="icon icon-envelope"></span><span class="text">nawaazish.crew@gmail.com</span></a></li>
-            </ul>
+        <div class="row">
+          <div class="col-md-12 text-center">
+              <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="#" target="_blank">Nawaazish</a>
+              </p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 text-center">
-       <p>Copyright <script>document.write(new Date().getFullYear())</script> All rights reserved | <a href="#" target="_blank">Nawaazish</a>
-       </p>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
+
 
 
   <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#079b78"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#fff"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#079b78"/></svg></div>
 
 
   <script src="js/jquery.min.js"></script>
