@@ -3329,6 +3329,58 @@ input[type="button"].btn-block {
   background: no-repeat center center;
   background-size: 100% 100%; }
 
+  .Social:hover{
+    background: rgba(255, 255, 255, 0.90);
+    border-radius: 50%;
+  }
+
+  .Social:hover span{
+        color: #079b78 !important;
+      }
+      .customInput{
+          border-radius: 6px 6px 6px 6px;
+          border-width: 0px 0px 1.1px 0px;
+          border-style: solid;
+          background-color: inherit;
+          text-decoration: none;
+          border-color: rgba(207, 207, 207, 1);
+          font-size: 13px;
+          margin-top: 2%;
+      }
+      input.customInput:focus {
+          outline-width: 0;
+          border-width: 0px 0px 2px 0px;
+          border-color: #079b78;
+
+      }
+      textarea.customInput:focus {
+          outline-width: 0;
+          border-width: 0px 0px 2px 0px;
+          border-color: #079b78;
+
+      }
+      .form-control{
+        height: calc(2.5em + .75rem + 2px) !important;
+        padding-bottom: 0px !important;
+      }
+      .form-control:focus,.btn:focus{
+        outline: 0;
+        box-shadow: 0 0 0 0 !important;
+      }
+      #joinUsButton{
+        width: 50%;
+        margin-left: 25%;
+        color: #079b78;
+        border-color: #079b78;
+        margin-top: -2%;
+        border-radius: 0px;
+      }
+      #joinUsButton:hover{
+        color: #fff;
+        background-color: #079b78;
+
+      }
+
 @media (max-width: 575.98px) {
   .navbar-expand-sm > .container,
   .navbar-expand-sm > .container-fluid {
