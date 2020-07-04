@@ -196,8 +196,8 @@ button {
   border-radius: 0; }
 
 button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color; }
+  outline: 0px dotted;
+  outline: 0px auto -webkit-focus-ring-color; }
 
 input,
 button,
@@ -3269,6 +3269,7 @@ input[type="button"].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
+  padding-left: 0.3rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap; }
@@ -4184,13 +4185,15 @@ input[type="button"].btn-block {
   height: 1rem;
   overflow: hidden;
   font-size: 0.75rem;
-  background-color: #e9ecef;
+  background-color: #000000;
   border-radius: 0.25rem; }
 
 .progress-bar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: none !important;
+  transition: none !important;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -4198,13 +4201,10 @@ input[type="button"].btn-block {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #fff;
+  color: #000000;
   text-align: center;
   white-space: nowrap;
-  background-color: #78d5ef;
-  -webkit-transition: width 0.6s ease;
-  -o-transition: width 0.6s ease;
-  transition: width 0.6s ease; }
+  background-color: #fff;}
   @media screen and (prefers-reduced-motion: reduce) {
     .progress-bar {
       -webkit-transition: none;
@@ -7375,10 +7375,10 @@ h1, h2, h3, h4, h5,
       top: 0;
       position: relative; } }
   .ftco-navbar-light .navbar-brand {
-    color: #fff; }
+    color: #079b78; }
     @media (min-width: 768px) {
       .ftco-navbar-light .navbar-brand {
-        color: #fff; } }
+        color: #079b78; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
     font-size: 16px;
     padding-top: .9rem;
@@ -7837,8 +7837,10 @@ h1, h2, h3, h4, h5,
     color: #000; }
 
 .ftco-section-3 {
-  padding: 8em 0;
-  position: relative; }
+  padding: 3em 0;
+  position: relative; 
+  background-color: #70e2c8;
+}
   .ftco-section-3 .overlay {
     position: absolute;
     top: 0;
@@ -7862,6 +7864,7 @@ h1, h2, h3, h4, h5,
       .ftco-section-3 .img-2 {
         height: 200px;
         margin-bottom: 40px; } }
+
 
 .volunteer h3 {
   color: #fff; }
