@@ -4182,13 +4182,16 @@ input[type="button"].btn-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 1rem;
+  height: 1.5rem;
+  font-weight: 600;
+  font-family: "Overpass", Arial, sans-serif;
   overflow: hidden;
-  font-size: 0.75rem;
+  font-size: 1rem;
   background-color: #000000;
   border-radius: 0.25rem; }
 
 .progress-bar {
+  padding-top: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
