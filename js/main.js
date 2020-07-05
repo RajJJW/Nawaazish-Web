@@ -287,3 +287,8 @@
 
 })(jQuery);
 
+
+//for progress bar
+$(".progress-bar").animate({
+        width: "70%",
+    }, 1500);
