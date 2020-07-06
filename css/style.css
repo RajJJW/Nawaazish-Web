@@ -9219,7 +9219,7 @@ textarea.form-control {
 .progress{
     width: 275px;
     height: 275px;
-    line-height: 150px;
+    text-align: center;
     background: none;
     margin: 0 auto;
     box-shadow: none;
