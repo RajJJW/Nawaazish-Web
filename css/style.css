@@ -4224,44 +4224,6 @@ input[type="button"].btn-block {
   -webkit-animation: progress-bar-stripes 1s linear infinite;
   animation: progress-bar-stripes 1s linear infinite; }
 
-
-.dashboard-cards .card-stacked{
-  color:#fff;
-  border-left: 1px solid rgba(255, 255, 255, 0.18);
-}
-.dashboard-cards .card-content{
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
-}
-.dashboard-cards .card-action strong{
-  font-weight:700;
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.65);
-}
-.donutpad {
-    padding: 32px 0;
-}
-.cirStats h4{
-  text-transform:uppercase;
-}
-.card-action b{
-  text-transform:uppercase;
-}
-
-
-.card.horizontal.cardIcon .card-image {
-    background: #30cc7b;
-    color: #fff !important;
-    font-size: 10px;
-    width: 94px;
-    text-align: center;
-    vertical-align: middle;
-}
-.card.horizontal.cardIcon .card-image i {
-    margin-top: 45%;
-    font-size: 55px;
-    opacity: .4;
-}
-
 .media {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7416,10 +7378,10 @@ h1, h2, h3, h4, h5,
       top: 0;
       position: relative; } }
   .ftco-navbar-light .navbar-brand {
-    color: #fff; }
+    color: #079b78; }
     @media (min-width: 768px) {
       .ftco-navbar-light .navbar-brand {
-        color: #fff; } }
+        color: #079b78; } }
   .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
     font-size: 16px;
     padding-top: .9rem;
