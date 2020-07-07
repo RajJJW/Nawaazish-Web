@@ -65,6 +65,7 @@
         </div>
       </div>
     </div>
+
   <body>
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -115,7 +116,10 @@
                                    <div><p>Scan to Donate Using any UPI</p></div>
                                </div>
                                <h3 class="heading" style="margin-bottom: 0px;"><a >UPI ID :</a></h3>
-                               <p>8130861433@upi<br>For other modes of payment</p>
+                               <p>8130861433@upi</p>
+                               <p><a href="#paytm_Modal" class="float-centre" data-toggle="modal">For PayTM QR Code click Here <i class="ion-ios-arrow-forward"></i></a></p>
+                                <br />
+                                <p>For other modes of payment</p>
                                <p><a href="contact.html" style="font-weight: 900;margin-bottom: 3px;">Contact Us</a></p>
                         </div>
               </div>
@@ -128,6 +132,8 @@
           </div>
       </div>
     </section>
+
+
 
     <section class="ftco-section-3">
       <div class="container">
@@ -167,8 +173,6 @@
                 </div>
             </div>    
         </div>
-      
-   
     </section>
 
 
@@ -222,6 +226,7 @@
           </div>
      
     </section>
+    
 
 
 
@@ -308,6 +313,23 @@
 
   <!-- loader -->
   <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#fff"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#079b78"/></svg></div>
+
+       <!--Modal for PayTM-->
+       <div class="modal" tabindex="-1" role="dialog" id="paytm_Modal">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">PayTM QR Code</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                  <div class="block-20" style="background-image: url('images/barcode-paytm.jpeg');height: 500px; background-size: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
   <script src="js/jquery.min.js"></script>
