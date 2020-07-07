@@ -7845,7 +7845,11 @@ h1, h2, h3, h4, h5,
     @media (max-width: 767.98px) {
       .ftco-section-3 .img-2 {
         height: 200px;
-        margin-bottom: 40px; } }
+        margin-bottom: 40px; } 
+        #progress-circle{
+          padding-top: 30px;
+        }
+        }
 
 
 .volunteer h3 {
@@ -9214,8 +9218,6 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
-
-
 
 .progress{
     width: 275px;
