@@ -7923,6 +7923,7 @@ h1, h2, h3, h4, h5,
 
 .staff {
   padding: 25px;
+  height: 18rem;
   background: #fff;
   -webkit-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
@@ -9273,7 +9274,7 @@ textarea.form-control {
     border-right: 0;
     -webkit-transform-origin: center right;
     transform-origin: center right;
-    animation: loading-1 1.8s linear forwards;
+    animation: loading-0 1.8s linear forwards;
 }
 .progress .progress-value{
     width: 92%;
@@ -9298,7 +9299,7 @@ textarea.form-control {
     border-color: #fdba04;
 }
 .progress.yellow .progress-left .progress-bar{
-    animation: loading-3 1s linear forwards 1.8s;
+    animation: loading-0 1s linear forwards 1.8s;
 }
 .progress.pink .progress-bar{
     border-color: #ed687c;
@@ -9312,6 +9313,17 @@ textarea.form-control {
 .progress.green .progress-left .progress-bar{
     animation: loading-5 1.2s linear forwards 1.8s;
 }
+@keyframes loading-0{
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
 @keyframes loading-1{
     0%{
         -webkit-transform: rotate(0deg);
@@ -9362,6 +9374,7 @@ textarea.form-control {
         transform: rotate(126deg);
     }
 }
+
 @media only screen and (max-width: 990px){
     .progress{ margin-bottom: 20px; }
 }
