@@ -7923,7 +7923,6 @@ h1, h2, h3, h4, h5,
 
 .staff {
   padding: 25px;
-  height: 15rem;
   background: #fff;
   -webkit-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0px 3px 66px -24px rgba(0, 0, 0, 0.2);
@@ -7936,7 +7935,7 @@ h1, h2, h3, h4, h5,
     .staff {
       margin-bottom: 30px; } }
   .staff .info {
-    width: 58%; }
+    width: calc(100% - 110px); }
     .staff .info h3 {
       font-size: 24px; }
       .staff .info h3 a {
@@ -7956,7 +7955,7 @@ h1, h2, h3, h4, h5,
   .staff .text p {
     margin-bottom: 0; }
     .staff .text p span {
-      font-size: 17px;
+      font-size: 20px;
       font-weight: 400;
       color: #7cbd1e; }
     .staff .text p a {
