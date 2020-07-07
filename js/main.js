@@ -287,3 +287,33 @@
 
 })(jQuery);
 
+
+// Join us form submit event
+$('form#joinus').on('submit', function(e){
+	e.preventDefault();
+	$.ajax({
+		type: 'POST',
+		url: './joinus.php',
+		data: $(this).serialize(),
+		success: function(data){
+		$('#joinUsModal').find('input').val("")
+		$('#joinUsModal').modal('hide')
+		$('#successMessage').modal('show')
+		}
+	})
+})
+
+//Contact form submit event
+$('form#contactForm').on('submit', function(e){
+	e.preventDefault();
+	$.ajax({
+		type: 'POST',
+		url: './contactus.php',
+		data: $(this).serialize(),
+		success: function(data){
+		$("form#contactForm").find('input').val("")
+		$("form#contactForm").find('textarea').val("")
+		$('#formSuccessMessage').modal('show')
+		}
+	})
+})
