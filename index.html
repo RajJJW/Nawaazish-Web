@@ -63,36 +63,49 @@
     <div class="modal fade" id="joinUsModal" tabindex="-1" role="dialog" aria-labelledby="joinUsModalTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modalphone" role="document" style="max-width: 50%; font-family: Helvetica">
         <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span></button> -->
-        <div class="modal-content" style="">
-
+        <div class="modal-content">
+  
             <div class="modal-body" style="padding: 0px">
                 <div class="container">
                   <div class="row">
                       <div class="col-lg-4 col-md-12" style="padding: 0px">
-
                         <img src="images/joinmodal.jpg" class="modalimg" height="472px" style="max-width: 100%; margin: 0px" alt="">
                       </div>
                       <div class="col-lg-8 col-md-12" style="text-align: center; background-color: ">
+  
                           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span style="color: #000">&times;</span></button>
                         <h2 style="color: #079b78"><b>Be a Volunteer</b></h2>
                         <span class="form-group" >
-                            <form action="abc" method="post" >
+                            <form action="./joinus.php" id="joinus" method="post" >
                             <input name="name" class="form-control customInput" id="username" placeholder="Name">
                             <input name="city" class="form-control customInput" id="emailLogIn" placeholder="State/City" style="width:49%; display: inline">
                             <input name="area" class="form-control customInput" id="emailLogIn" placeholder="Area/Locality" style="width:49%; display: inline">
                             <input name="pincode" class="form-control customInput" id="emailLogIn" placeholder="Pincode" style="width:49%; display: inline">
-                            <input name="phn" class="form-control customInput" id="emailLogIn" placeholder="Contact No." style="width:49%; display: inline">
-                            <input name="email" class="form-control customInput" id="emailLogIn" placeholder="Email Address">
-                            <input name="pass" class="form-control customInput" id="passwordLogIn" placeholder="Instagram handle">
+                            <input name="phone" class="form-control customInput" id="emailLogIn" placeholder="Contact No." style="width:49%; display: inline">
+                            <input type="email" name="email" class="form-control customInput" id="emailLogIn" placeholder="Email Address">
+                            <input name="instagram" class="form-control customInput" id="passwordLogIn" placeholder="Instagram handle">
                             <br>
-                            <input type="submit" name="" class="btn btn-outline-dark btn-md btn-block" id="joinUsButton" value="Join Us"/>
+                            <button type="submit" name="joinus" class="btn btn-outline-dark btn-md btn-block" id="joinUsButton" value="Join Us">Join Us</button>
                             <br>
                             </form>
-
+  
                         </span>
                       </div>
                   </div>
                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="successMessage" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <div class="text-center mb-4"><img style="width: 3em" src="./images/tick.svg" alt=""></div>
+              <p class="text-center">Thank You for showing your interest in joining us. We will get back to you soon.</p>
             </div>
           </div>
         </div>
