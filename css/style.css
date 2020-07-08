@@ -3269,7 +3269,6 @@ input[type="button"].btn-block {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  padding-left: 0.3rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap; }
@@ -7429,7 +7428,7 @@ h1, h2, h3, h4, h5,
     cursor: pointer;
     padding-right: 0;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 19px;
     letter-spacing: .1em; }
   .ftco-navbar-light.scrolled {
     position: fixed;
@@ -7479,7 +7478,7 @@ h1, h2, h3, h4, h5,
       cursor: pointer;
       padding-right: 0;
       text-transform: uppercase;
-      font-size: 16px;
+      font-size: 19px;
       letter-spacing: .1em; }
     .ftco-navbar-light.scrolled .nav-link {
       padding-top: 0.9rem !important;
